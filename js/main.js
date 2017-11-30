@@ -84,88 +84,64 @@ jQuery(function ($) {
 
 	//Slider
 	$(document).ready(function () {
-		var time = 15; // time in seconds
-
-		var $progressBar,
-			$bar,
-			$elem,
-			isPause,
-			tick,
-			percentTime;
-
 		//Init the carousel
-		$(".main-slider").find('.owl-carousel').owlCarousel({
-			slideSpeed: 500,
-			paginationSpeed: 500,
-			singleItem: true,
-			navigation: true,
-			navigationText: [
-				"<i class='fa fa-angle-left'></i>",
-				"<i class='fa fa-angle-right'></i>"
-			],
-			afterInit: progressBar,
-			afterMove: moved,
-			startDragging: pauseOnDragging,
-			//autoHeight : true,
-			transitionStyle: "fadeUp"
+		initSlider();
+
+		function initSlider() {
+			$('#main-slider').find('.owl-carousel').owlCarousel({
+				items: 1,
+				loop: true,
+				autoplay: true,
+				nav: true,
+				dots: false,
+				autoplayTimeout: 7000,
+				onInitialized: startProgressBar,
+				onTranslate: resetProgressBar,
+				onTranslated: startProgressBar
+			});
+		}
+
+		function startProgressBar() {
+			// apply keyframe animation 
+			$('.slide-progress').css({
+				'width': '100%',
+				'transition': 'width 7000ms'
+			});
+		}
+
+		function resetProgressBar() {
+			$('.slide-progress').css({
+				'width': 0,
+				'transition': 'width 0s'
+			});
+		}
+		$('#slider-fotos').find('.owl-carousel').owlCarousel({
+			items: 1,
+			loop: true,
+			autoplay: true,
+			nav: true,
+			dots: false,
+			autoplayTimeout: 15000,
+			onInitialized: startProgressBar1,
+			onTranslate: resetProgressBar1,
+			onTranslated: startProgressBar1
 		});
 
-		//Init progressBar where elem is $("#owl-demo")
-		function progressBar(elem) {
-			$elem = elem;
-			//build progress bar elements
-			buildProgressBar();
-			//start counting
-			start();
-		}
-
-		//create div#progressBar and div#bar then append to $(".owl-carousel")
-		function buildProgressBar() {
-			$progressBar = $("<div>", {
-				id: "progressBar"
+		function startProgressBar1() {
+			// apply keyframe animation 
+			$('.slider-progress').css({
+				'width': '100%',
+				'transition': 'width 15000ms'
 			});
-			$bar = $("<div>", {
-				id: "bar"
+		}
+
+		function resetProgressBar1() {
+			$('.slider-progress').css({
+				'width': 0,
+				'transition': 'width 0s'
 			});
-			$progressBar.append($bar).appendTo($elem);
-		}
-
-		function start() {
-			//reset timer
-			percentTime = 0;
-			isPause = false;
-			//run interval every 0.01 second
-			tick = setInterval(interval, 10);
-		};
-
-		function interval() {
-			if (isPause === false) {
-				percentTime += 1 / time;
-				$bar.css({
-					width: percentTime + "%"
-				});
-				//if percentTime is equal or greater than 100
-				if (percentTime >= 100) {
-					//slide to next item 
-					$elem.trigger('owl.next')
-				}
-			}
-		}
-
-		//pause while dragging 
-		function pauseOnDragging() {
-			isPause = true;
-		}
-
-		//moved callback
-		function moved() {
-			//clear interval
-			clearTimeout(tick);
-			//start again
-			start();
 		}
 	});
-
 	//Initiat WOW JS
 	new WOW().init();
 	//smoothScroll
@@ -265,7 +241,7 @@ jQuery(function ($) {
 		$("#contato").css('margin-top', $("#map1").height() + 50);
 	}
 
-	if ($(window).width() < 992){
+	if ($(window).width() < 992) {
 		$('.portfolio-link').removeAttr('href');
 	}
 
@@ -281,44 +257,44 @@ jQuery(function ($) {
 	];
 	var indexPortifolio = 0;
 
-	$('.caption').click(function(){
+	$('.caption').click(function () {
 		indexPortifolio = parseInt($(this).closest('.portfolio-link').attr('href').split('#portfolioModal')[1]);
-		$('#portfolioModal'+indexPortifolio).find('.section-title').text(titles[indexPortifolio-1]);
-		$('#portfolioModal'+indexPortifolio).find('.img-fluid').attr('src', imgs[indexPortifolio-1]);
+		$('#portfolioModal' + indexPortifolio).find('.section-title').text(titles[indexPortifolio - 1]);
+		$('#portfolioModal' + indexPortifolio).find('.img-fluid').attr('src', imgs[indexPortifolio - 1]);
 	});
 
 	$('.previous').click(function () {
 		var port = $(this).closest('.portfolio-modal');
-	
+
 		if (indexPortifolio == 1)
 			indexPortifolio = 3;
 		else
 			indexPortifolio--;
 
-		port.find('.section-title').text(titles[indexPortifolio-1]);
-		port.find('.img-fluid').attr('src', imgs[indexPortifolio-1]);
+		port.find('.section-title').text(titles[indexPortifolio - 1]);
+		port.find('.img-fluid').attr('src', imgs[indexPortifolio - 1]);
 
 	});
 
 	$('.next').click(function () {
 		var port = $(this).closest('.portfolio-modal');
-	
+
 		if (indexPortifolio == 3)
 			indexPortifolio = 1;
 		else
 			indexPortifolio++;
 
-		port.find('.section-title').text(titles[indexPortifolio-1]);
-		port.find('.img-fluid').attr('src', imgs[indexPortifolio-1]);
+		port.find('.section-title').text(titles[indexPortifolio - 1]);
+		port.find('.img-fluid').attr('src', imgs[indexPortifolio - 1]);
 
 	});
 
-	$('.portfolio-modal .close-modal').hover(function(){
+	$('.portfolio-modal .close-modal').hover(function () {
 		$('.portfolio-modal .close-modal .lr').css("background-color", '#3b7256');
 		$('.portfolio-modal .close-modal .lr .rl').css("background-color", '#3b7256');
-	}, function(){
+	}, function () {
 		$('.portfolio-modal .close-modal .lr').css("background-color", '#212529');
 		$('.portfolio-modal .close-modal .lr .rl').css("background-color", '#212529');
 	});
-		
+
 });
