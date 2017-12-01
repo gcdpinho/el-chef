@@ -67,7 +67,7 @@ jQuery(function ($) {
 
 	//Map
 	function init_map1() {
-		var myLocation = new google.maps.LatLng(-26.9716093, -48.9145781);
+		var myLocation = new google.maps.LatLng(-26.9116093, -48.9145721);
 		var mapOptions = {
 			center: myLocation,
 			zoom: 16
