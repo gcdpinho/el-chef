@@ -1,0 +1,13 @@
+- navbar background roxa;
+- home: slider com duas imagens
+    - polenta congelada;
+    - outra imagem: com texto:
+        "EL CHEF
+        O jeito fácil de fazer polenta."
+- produtos: três produtos email
+- empresa: tirar roxa, bota um das enviadas
+    - Polenta tablete;
+    - Polenta cubo;
+    - Polenta palito;
+- footer: roxo
+    - só a logo;
