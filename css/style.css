@@ -1709,3 +1709,10 @@ footer p{
   text-decoration: none;
   
 }
+
+@media only screen and (max-width: 1024px){
+  .notProduto{
+    background-size: 100% !important;
+    background-position: center !important;
+  }
+}
