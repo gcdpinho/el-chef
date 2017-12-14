@@ -91,7 +91,7 @@ jQuery(function ($) {
 			$('#main-slider').find('.owl-carousel').owlCarousel({
 				items: 1,
 				loop: true,
-				autoplay: true,
+				autoplay: false,
 				nav: true,
 				dots: false,
 				autoplayTimeout: 7000,
@@ -290,8 +290,8 @@ jQuery(function ($) {
 	});
 
 	$('.portfolio-modal .close-modal').hover(function () {
-		$('.portfolio-modal .close-modal .lr').css("background-color", '#3b7256');
-		$('.portfolio-modal .close-modal .lr .rl').css("background-color", '#3b7256');
+		$('.portfolio-modal .close-modal .lr').css("background-color", '#602963');
+		$('.portfolio-modal .close-modal .lr .rl').css("background-color", '#602963');
 	}, function () {
 		$('.portfolio-modal .close-modal .lr').css("background-color", '#212529');
 		$('.portfolio-modal .close-modal .lr .rl').css("background-color", '#212529');

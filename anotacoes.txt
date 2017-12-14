@@ -1,13 +1,33 @@
-- navbar background roxa;
+- navbar background roxa: ACHO QUE A NAV TODA ROXA FICA MEIO ESTRANHO, SEM CONTAR
+QUE A IMAGEM NÃO É MUITO BOA E SEM SER O FUNDO BRANCO FICA CAGADA. O QUE ACHA DE COLOCAR OS EFEITOS EM ROXO?
+
 - home: slider com duas imagens
     - polenta congelada;
     - outra imagem: com texto:
         "EL CHEF
         O jeito fácil de fazer polenta."
-- produtos: três produtos email
-- empresa: tirar roxa, bota um das enviadas
+
+
+- produtos: três produtos email: DONE 
+
+
+- empresa: tirar roxa, bota um das enviadas: DONE
     - Polenta tablete;
     - Polenta cubo;
     - Polenta palito;
-- footer: roxo
+
+- contato: DONE
+    faça seu pedido aqui
+
+- footer: roxo: DONE
     - só a logo;
+
+
+texto: DONE
+
+a el Chef industria de alimentos foi fundada em 2008 na cidade de Gaspar - SC,
+com foco na produção de Polenta Congelada de qualidade garantindo um sabor caseiro e crocancia inigualável, 
+a empresa possui todos os equipamentos adequados e autorizados pelos órgãos de vigentes.
+Seus Clientes são compostos por restaurantes, pizzarias, hotéis, atacados. 
+Atua em parceria com grandes atacados que levam nossos produtos até sua residência, 
+garantimos a eficiência e rapidez na entrega.
