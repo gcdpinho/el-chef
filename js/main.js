@@ -67,14 +67,14 @@ jQuery(function ($) {
 
 	//Map
 	function init_map1() {
-		var myLocation = new google.maps.LatLng(-26.9116093, -48.9145721);
+		var myLocation = new google.maps.LatLng(-26.9193789, -48.94779);
 		var mapOptions = {
 			center: myLocation,
 			zoom: 16
 		};
 		var marker = new google.maps.Marker({
 			position: myLocation,
-			title: "JK'D Malhas"
+			title: "el Chef"
 		});
 		var map = new google.maps.Map(document.getElementById("map1"),
 			mapOptions);
@@ -89,7 +89,7 @@ jQuery(function ($) {
 
 		function initSlider() {
 			$('#main-slider').find('.owl-carousel').owlCarousel({
-				items: 1,
+				items: 2,
 				loop: true,
 				autoplay: false,
 				nav: true,

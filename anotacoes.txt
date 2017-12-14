@@ -1,7 +1,7 @@
 - navbar background roxa: ACHO QUE A NAV TODA ROXA FICA MEIO ESTRANHO, SEM CONTAR
 QUE A IMAGEM NÃO É MUITO BOA E SEM SER O FUNDO BRANCO FICA CAGADA. O QUE ACHA DE COLOCAR OS EFEITOS EM ROXO?
 
-- home: slider com duas imagens
+- home: slider com duas imagens: DONE
     - polenta congelada;
     - outra imagem: com texto:
         "EL CHEF
@@ -31,3 +31,4 @@ a empresa possui todos os equipamentos adequados e autorizados pelos órgãos de
 Seus Clientes são compostos por restaurantes, pizzarias, hotéis, atacados. 
 Atua em parceria com grandes atacados que levam nossos produtos até sua residência, 
 garantimos a eficiência e rapidez na entrega.
+

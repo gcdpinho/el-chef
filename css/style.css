@@ -134,24 +134,24 @@ ul.nostyle i {
   background-position: 50% 0;
   background-size: cover;
 }
+
+
 .main-slider .slider-inner {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  color: #fff;
-  display: flex;
-  align-items: center;
+  color: black;
 }
 .main-slider .slider-inner h2 {
   font-size: 36px;
   line-height: 1;
   text-transform: uppercase;
-  color: #fff;
+  color: black;
 }
 .main-slider .slider-inner h2 > span {
-  color: #602963;
+  color: #a51c26;
 }
 .main-slider .slider-inner .btn {
   margin-top: 10px;
@@ -1686,6 +1686,11 @@ i.fa.fa-chevron-right:hover, i.fa.fa-chevron-left:hover{
 .item.produto{
   background-size: 60%;
   background-position: center;
+}
+
+#main-slider .item.produto{
+  background-size: 60%;
+  background-position: right;
 }
 
 footer p{
