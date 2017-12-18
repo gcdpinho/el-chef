@@ -131,11 +131,10 @@ ul.nostyle i {
 .main-slider .item {
   height: 558px;
   background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
+
 }
-
-
 .main-slider .slider-inner {
   position: absolute;
   top: 0;
@@ -1693,6 +1692,8 @@ i.fa.fa-chevron-right:hover, i.fa.fa-chevron-left:hover{
   background-position: right;
 }
 
+
+
 footer p{
   margin: 0;
   display: inline;
@@ -1710,9 +1711,7 @@ footer p{
   
 }
 
-@media only screen and (max-width: 1024px){
-  .notProduto{
-    background-size: 100% !important;
-    background-position: center !important;
-  }
+.slogan{
+  display: block;
+  margin-top: 2em;
 }
