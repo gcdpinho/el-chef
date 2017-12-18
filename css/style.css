@@ -1683,12 +1683,12 @@ i.fa.fa-chevron-right:hover, i.fa.fa-chevron-left:hover{
 }
 
 .item.produto{
-  background-size: 60%;
+  background-size: contain;
   background-position: center;
 }
 
 #main-slider .item.produto{
-  background-size: 60%;
+  background-size: contain;
   background-position: right;
 }
 

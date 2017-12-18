@@ -94,7 +94,7 @@ jQuery(function ($) {
 			$('#main-slider').find('.owl-carousel').owlCarousel({
 				items: items,
 				loop: true,
-				autoplay: false,
+				autoplay: true,
 				nav: true,
 				dots: false,
 				autoplayTimeout: 7000,
