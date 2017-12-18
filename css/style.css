@@ -1719,3 +1719,9 @@ footer p{
 .fs1-25rem{
   font-size: 1.25rem;
 }
+
+@media only screen and (max-width: 1024px) {
+  .owl-carousel.owl-drag .owl-item {
+    pointer-events: none;
+  }
+}
