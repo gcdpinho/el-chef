@@ -250,15 +250,15 @@ jQuery(function ($) {
 	} else
 		$('.caption').click(function () {
 			indexPortifolio = parseInt($(this).closest('.portfolio-link').attr('href').split('#portfolioModal')[1]);
-			$('#portfolioModal' + indexPortifolio).find('.section-title').text(titles[indexPortifolio - 1]);
+			$('#portfolioModal' + indexPortifolio).find('.modal-title').text(titles[indexPortifolio - 1]);
 			$('#portfolioModal' + indexPortifolio).find('.img-fluid').attr('src', imgs[indexPortifolio - 1]);
 		});
 
 	$('section#main-slider').css('padding-top', $('nav.navbar').height());
 
-	var titles = [$("#portfolioModal1").find('.section-title').text(),
-		$("#portfolioModal2").find('.section-title').text(),
-		$("#portfolioModal3").find('.section-title').text()
+	var titles = [$("#portfolioModal1").find('.modal-title').text(),
+		$("#portfolioModal2").find('.modal-title').text(),
+		$("#portfolioModal3").find('.modal-title').text()
 	];
 	var imgs = [$("#portfolioModal1").find('.img-fluid').attr('src'),
 		$("#portfolioModal2").find('.img-fluid').attr('src'),
@@ -275,8 +275,8 @@ jQuery(function ($) {
 			indexPortifolio = 3;
 		else
 			indexPortifolio--;
-
-		port.find('.section-title').text(titles[indexPortifolio - 1]);
+			
+		port.find('.modal-title').text(titles[indexPortifolio - 1]);
 		port.find('.img-fluid').attr('src', imgs[indexPortifolio - 1]);
 
 	});
@@ -289,7 +289,7 @@ jQuery(function ($) {
 		else
 			indexPortifolio++;
 
-		port.find('.section-title').text(titles[indexPortifolio - 1]);
+		port.find('.modal-title').text(titles[indexPortifolio - 1]);
 		port.find('.img-fluid').attr('src', imgs[indexPortifolio - 1]);
 
 	});
@@ -307,7 +307,7 @@ jQuery(function ($) {
 		var col1 = $('#about').find('.col1');
 		var col2 = $('#about').find('.col2');
 		var temp = $('#about').find('.temp');
-		
+
 		temp.html(col1.html());
 		col1.html(col2.html());
 		col2.html(temp.html());
