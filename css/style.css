@@ -859,6 +859,10 @@ ul.nostyle i {
   margin: 0 7.5px;
 }
 @media only screen and (min-width: 768px) {
+  .col-sm-6.wow.fadeInRight.animated {
+    padding-left: 30px;
+  }
+
   #parque.column-title:after{
     width: 30% !important;
   }
@@ -1570,10 +1574,6 @@ fieldset[disabled] .btn-success:hover {
   z-index: 1030;
 }
 
-.col-sm-6.wow.fadeInRight.animated {
-  padding-left: 30px;
-}
-
 .map {
   min-width: 300px;
   max-height: 470px;
@@ -1724,4 +1724,8 @@ footer p{
   .owl-carousel.owl-drag .owl-item {
     pointer-events: none;
   }
+}
+
+footer .img-fluid{
+  width: 100px;
 }

@@ -242,6 +242,7 @@ jQuery(function ($) {
 
 	if ($(window).width() < 768) {
 		$("#contato").css('margin-top', $("#map1").height() + 50);
+		changeSide();
 	}
 
 	if ($(window).width() < 992) {
@@ -300,5 +301,17 @@ jQuery(function ($) {
 		$('.portfolio-modal .close-modal .lr').css("background-color", '#212529');
 		$('.portfolio-modal .close-modal .lr .rl').css("background-color", '#212529');
 	});
+
+
+	function changeSide() {
+		var col1 = $('#about').find('.col1');
+		var col2 = $('#about').find('.col2');
+		var temp = $('#about').find('.temp');
+		
+		temp.html(col1.html());
+		col1.html(col2.html());
+		col2.html(temp.html());
+		temp.html("");
+	}
 
 });
