@@ -1700,15 +1700,20 @@ footer p{
   font-size: 17px;
 }
 
-.aznicsis{
+.vulpis{
   color: white;
 }
 
-.aznicsis:hover{
+.vulpis:hover{
   font-weight: bold;
   color: white;
   text-decoration: none;
-  
+}
+
+.vulpis:focus{
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
 .slogan{
